@@ -10,11 +10,13 @@ import { ContactModal } from './components/ContactModal';
 import { audioEngine } from './components/AudioEngine';
 import { SmoothReveal } from './components/SmoothReveal';
 import { FloatingWhatsApp } from './components/FloatingWhatsApp';
+import { BrandLoader } from './components/BrandLoader';
 
 export default function App() {
   const [isAudioPlaying, setIsAudioPlaying] = useState<boolean>(false);
   const [isHandbookOpen, setIsHandbookOpen] = useState<boolean>(false);
   const [isContactOpen, setIsContactOpen] = useState<boolean>(false);
+  const [isLoading, setIsLoading] = useState<boolean>(true);
 
   const handleToggleAudio = () => {
     const nextState = audioEngine.toggle();
@@ -23,6 +25,7 @@ export default function App() {
 
   return (
     <div className="min-h-screen bg-white text-black flex flex-col selection:bg-[#ff5500] selection:text-white">
+      {isLoading && <BrandLoader onDone={() => setIsLoading(false)} />}
       <Navbar
         isAudioPlaying={isAudioPlaying}
         onToggleAudio={handleToggleAudio}
