@@ -115,10 +115,11 @@ export const Footer: React.FC<FooterProps> = ({ onOpenContact, onOpenHandbook })
                 <Instagram className="w-5 h-5" />
               </a>
               <a
-                href="https://linkedin.com"
+                href="https://www.linkedin.com/in/arul-r-942942194/"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="LinkedIn"
+                title="Connect on LinkedIn"
                 className="hover:text-[#ff5500] transition-colors"
               >
                 <Linkedin className="w-5 h-5" />

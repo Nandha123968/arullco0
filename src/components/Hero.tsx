@@ -119,10 +119,11 @@ export const Hero: React.FC<HeroProps> = ({
             </a>
 
             <a
-              href="https://linkedin.com"
+              href="https://www.linkedin.com/in/arul-r-942942194/"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="LinkedIn"
+              title="Connect on LinkedIn"
               className="hover:scale-115 hover:text-[#ff5500] transition-all"
             >
               <Linkedin className="w-7 h-7 sm:w-8 sm:h-8" />
